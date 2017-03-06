@@ -20,24 +20,24 @@ exports.portraits = function(req, res){
   res.render('categories', {
     category: 'portraits',
     photo: [
-      {src:"./img/item04.jpg"},
-      {src:"./img/item02.jpg"},
-      {src:"./img/item03.jpg"},
-      {src:"./img/item01.jpg"},
-      {src:"./img/item07.jpg"},
-      {src:"./img/item08.jpg"},
-      {src:"./img/item06.jpg"},
-      {src:"./img/item05.jpg"},
-      {src:"./img/item25.jpg"},
-      {src:"./img/item26.jpg"},
-      {src:"./img/item27.jpg"},
-      {src:"./img/item28.jpg"},
-      {src:"./img/item29.jpg"},
-      {src:"./img/item30.jpg"},
-      {src:"./img/item31.jpg"},
-      {src:"./img/item32.jpg"},
-      {src:"./img/item33.jpg"},
-      {src:"./img/item34.jpg"}
+      {src:"./img/item04.JPG"},
+      {src:"./img/item02.JPG"},
+      {src:"./img/item03.JPG"},
+      {src:"./img/item01.JPG"},
+      {src:"./img/item07.JPG"},
+      {src:"./img/item08.JPG"},
+      {src:"./img/item06.JPG"},
+      {src:"./img/item05.JPG"},
+      {src:"./img/item25.JPG"},
+      {src:"./img/item26.JPG"},
+      {src:"./img/item27.JPG"},
+      {src:"./img/item28.JPG"},
+      {src:"./img/item29.JPG"},
+      {src:"./img/item30.JPG"},
+      {src:"./img/item31.JPG"},
+      {src:"./img/item32.JPG"},
+      {src:"./img/item33.JPG"},
+      {src:"./img/item34.JPG"}
     ]
   });
 };
@@ -45,15 +45,15 @@ exports.events = function(req, res){
   res.render('categories', {
     category: 'events',
     photo: [
-      {src:"./img/item09.jpg"},
-      {src:"./img/item10.jpg"},
-      {src:"./img/item11.jpg"},
-      {src:"./img/item12.jpg"},
-      {src:"./img/item13.jpg"},
-      {src:"./img/item14.jpg"},
-      {src:"./img/item15.jpg"},
-      {src:"./img/item16.jpg"},
-      {src:"./img/item17.jpg"}
+      {src:"./img/item09.JPG"},
+      {src:"./img/item10.JPG"},
+      {src:"./img/item11.JPG"},
+      {src:"./img/item12.JPG"},
+      {src:"./img/item13.JPG"},
+      {src:"./img/item14.JPG"},
+      {src:"./img/item15.JPG"},
+      {src:"./img/item16.JPG"},
+      {src:"./img/item17.JPG"}
     ]
   });
 };
@@ -61,13 +61,13 @@ exports.family = function(req, res){
   res.render('categories', {
     category: 'family',
     photo: [
-      {src:"./img/item18.jpg"},
-      {src:"./img/item19.jpg"},
-      {src:"./img/item20.jpg"},
-      {src:"./img/item21.jpg"},
-      {src:"./img/item22.jpg"},
-      {src:"./img/item23.jpg"},
-      {src:"./img/item24.jpg"}
+      {src:"./img/item18.JPG"},
+      {src:"./img/item19.JPG"},
+      {src:"./img/item20.JPG"},
+      {src:"./img/item21.JPG"},
+      {src:"./img/item22.JPG"},
+      {src:"./img/item23.JPG"},
+      {src:"./img/item24.JPG"}
     ]
   });
 };
@@ -75,12 +75,12 @@ exports.landscape = function(req, res){
   res.render('categories', {
     category: 'landscape',
     photo: [
-      {src:"./img/item36.jpg"},
-      {src:"./img/item37.jpg"},
-      {src:"./img/item38.jpg"},
-      {src:"./img/item39.jpg"},
-      {src:"./img/item40.jpg"},
-      {src:"./img/item35.jpg"}
+      {src:"./img/item36.JPG"},
+      {src:"./img/item37.JPG"},
+      {src:"./img/item38.JPG"},
+      {src:"./img/item39.JPG"},
+      {src:"./img/item40.JPG"},
+      {src:"./img/item35.JPG"}
     ]
   });
 };
