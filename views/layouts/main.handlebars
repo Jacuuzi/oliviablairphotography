@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Olivia Blair Photography</title>
+  <meta name="keywords" content="photography, corvallis, oregon, photos" />
+  <meta name="author" content="Jake Thornton" />
+  <link href='//fonts.googleapis.com/css?family=Yeseva One' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="/index.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<header>
+  <img id="navimg" src="{{static '/img/navlogo.png'}}" style="width: 55.5px; height: 55.5px;" />
+  <ul class="nav" style="top: 0; left: 0; right: 0; height: 3.5em;">
+    <li><a href="/">Photos</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <a id="fb" href="https://www.facebook.com/liv.tormondsen"><img src="{{static '/img/fb.png'}}" style="width:39.74px;height:22.5px;" /></a>
+  <a id="insta" href="https://www.instagram.com/oliviablairr_/"><img src="{{static '/img/insta.png'}}" style="width:30px;height:30px;" /></a>
+</header>
+<body>
+  <div id="container">
+    <div id="tl"></div>
+    <div id="tr"></div>
+    {{{body}}}
+    <div id="bl"></div>
+    <div id="br"></div>
+  </div>
+</body>
+<div class="footer">
+  <img src="{{static '/img/logo.png'}}" style="width:160px;height:200px;"/>
+  <span>{{fortune}}</span>
+</div>
+</html>

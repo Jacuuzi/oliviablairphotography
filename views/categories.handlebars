@@ -1,0 +1,54 @@
+<div class="logo_ctnr"><img id="big_logo" src="{{static '/img/biglogo.png'}}" style="width:440px;height:550px;" /></div>
+  <div id="fullscreen"><img id="left" src="{{static '/img/left.png'}}" /></img><img id="displaying" src=""/><img id="right" src="{{static '/img/right.png'}}" /></div>
+  <div class="grid-nav"><a href="/" style="cursor:pointer;text-decoration:none;color:black;"><b>Categories</b></a><p style="display:inline-block;">/{{category}}</p></div>
+  <div class="grid">
+    {{#each photo}}
+      <img class="grid-item appear" src="{{src}}" />
+    {{/each}}
+  </div>
+<script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+<script>
+$(window).on('load', function(){
+  $('.grid').masonry({
+    // options...
+    itemSelector: '.grid-item'
+  });
+});
+var photoIndex;
+
+$(document).ready(function(){
+  setTimeout(function(){
+    $('.grid-item').click(function(){
+      var src = $(this).attr('src');
+      $('#displaying').attr('src', src);
+      $('#fullscreen').fadeIn();
+      photoIndex = $('.grid-item').index(this);
+    });
+    $('#fullscreen').click(function(){
+      $(this).fadeOut();
+    });
+  }, 2500);
+});
+
+var photos = document.getElementsByClassName('grid-item');
+$('#left').click(function(event){
+  event.stopPropagation();
+  if(photoIndex == 0)
+    photoIndex = photos.length - 1;
+  else
+    photoIndex--;
+  var src = photos[photoIndex].getAttribute("src");
+  $('#displaying').attr('src', src);
+});
+$('#right').click(function(event){
+  event.stopPropagation();
+  if(photoIndex == photos.length - 1)
+    photoIndex = 0;
+  else
+    photoIndex++;
+  var newPhoto = photos[photoIndex];
+  var src = newPhoto.src;
+  $('#displaying').attr('src', src);
+});
+</script>
+<script src="/main.js"></script>

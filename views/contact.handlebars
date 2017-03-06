@@ -1,0 +1,31 @@
+<div id="contact-page">
+  <div id="email-ctnr">
+    <input id="to" size="30" type="text" placeholder=" Enter E-mail" />
+    <input id="subject" size="30" type="text" placeholder=" Write Subject" />
+    <textarea id="content" cols="67" rows="12"></textarea>
+    <div id="send_email">Submit</div>
+  </div>
+  <p class="bubble">Please email me if you have any questions!
+  <div id="contact">
+    <p>Email: oliviablairrr@gmail.com
+    <p>Phone: (555)555-5555
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  var from,to,subject,text;
+  $("#send_email").click(function(){
+    to=$("#to").val();
+    subject=$("#subject").val();
+    text=$("#content").val();
+    $("#send_email").text("Sending...");
+    $.get("http://localhost:3000/contact/send",{to:to,subject:subject,text:text},function(data){
+      if(data=="sent")
+      {
+        $("#send_email").addClass('done');
+        $("#send_email").empty().html("Sent");
+      }
+    });
+  });
+});
+</script>
