@@ -1,16 +1,10 @@
 disableScroll();
 
-$('.appear').each(function(i){
-  setTimeout(function(){
-    $('.appear').eq(i).addClass('is-visible');
-  }, 600 * i);
-});
-
 $(document).ready(function(){
   setTimeout(function(){
     $('#big_logo').fadeOut(1000);
     enableScroll();
-  }, 2500);
+  }, 4000);
 });
 
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
