@@ -4,7 +4,7 @@ $(document).ready(function(){
   setTimeout(function(){
     $('#big_logo').fadeOut(1000);
     enableScroll();
-  }, 4000);
+  }, 2500);
 });
 
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
