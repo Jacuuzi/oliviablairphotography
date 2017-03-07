@@ -8,12 +8,14 @@
   </div>
 <script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 <script>
+$('.appear').on('load', function (event) { $(event.target).addClass('is-visible'); });
 $(window).on('load', function(){
   $('.grid').masonry({
     // options...
     itemSelector: '.grid-item'
   });
 });
+
 var photoIndex;
 
 $(document).ready(function(){

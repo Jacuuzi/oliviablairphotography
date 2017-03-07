@@ -1,11 +1,5 @@
 disableScroll();
 
-$('.appear').each(function(i){
-  setTimeout(function(){
-    $('.appear').eq(i).addClass('is-visible');
-  }, 200 * i);
-});
-
 $(document).ready(function(){
   setTimeout(function(){
     $('#big_logo').fadeOut(1000);
